@@ -91,19 +91,44 @@
 
 
     <!-- Portfolio Grid Section -->
+
+<style id="jsbin-css">
+/* Color columns */
+[class^="col-"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+
+/* Make equal height with table styles */
+
+@media (min-width: 768px) {
+  .table-row {
+    display: table;
+    table-layout: fixed;
+  }
+
+  .table-row [class^="col-"] {
+    display: table-cell;
+    float: none;
+  }
+}
+
+</style>
     <section id="portfolio">
         <div class="container">
             <div class="row">
-
                 <div class="col-lg-12 text-center">
                     <h2>Portfolio</h2>
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
+            <div class="row table-row">
                 
-                <div class="row-height">
-                    <div class="col-sm-4 col-height portfolio-item">
+                    <div class="col-sm-4 portfolio-item">
                         <a href="#modalPokemon" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -113,10 +138,8 @@
                             <img src="/img/portfolio/pokemon.jpg" class="img-responsive" alt="">
                         </a>
                     </div>
-                </div>
                 
-                <div class="row-height">
-                    <div class="col-sm-4 col-height portfolio-item">
+                    <div class="col-sm-4 portfolio-item">
                         <a href="#modalCabin" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -126,10 +149,8 @@
                             <img src="/img/portfolio/cabin.png" class="img-responsive" alt="">
                         </a>
                     </div>
-                </div>
                 
-                <div class="row-height">
-                    <div class="col-sm-4 col-height portfolio-item">
+                    <div class="col-sm-4 portfolio-item">
                         <a href="#modalCake" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -139,10 +160,8 @@
                             <img src="/img/portfolio/cake.png" class="img-responsive" alt="">
                         </a>
                     </div>
-                </div>
                 
-                <div class="row-height">
-                    <div class="col-sm-4 col-height portfolio-item">
+                    <div class="col-sm-4 portfolio-item">
                         <a href="#modalCircus" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -152,10 +171,8 @@
                             <img src="/img/portfolio/circus.png" class="img-responsive" alt="">
                         </a>
                     </div>
-                </div>
                 
-                <div class="row-height">
-                    <div class="col-sm-4 col-height portfolio-item">
+                    <div class="col-sm-4 portfolio-item">
                         <a href="#modalGame" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -165,10 +182,8 @@
                             <img src="/img/portfolio/game.png" class="img-responsive" alt="">
                         </a>
                     </div>
-                </div>
                 
-                <div class="row-height">
-                    <div class="col-sm-4 col-height portfolio-item">
+                    <div class="col-sm-4 portfolio-item">
                         <a href="#modalSafe" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -178,10 +193,8 @@
                             <img src="/img/portfolio/safe.png" class="img-responsive" alt="">
                         </a>
                     </div>
-                </div>
                 
-                <div class="row-height">
-                    <div class="col-sm-4 col-height portfolio-item">
+                    <div class="col-sm-4 portfolio-item">
                         <a href="#modalSubmarine" class="portfolio-link" data-toggle="modal">
                             <div class="caption">
                                 <div class="caption-content">
@@ -191,7 +204,6 @@
                             <img src="/img/portfolio/submarine.png" class="img-responsive" alt="">
                         </a>
                     </div>
-                </div>
                 
             </div>
         </div>
